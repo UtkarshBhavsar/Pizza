@@ -67,17 +67,17 @@ SETTING UP SSL IN TOMCAT (HTTPS CONFIGURATION)
 
 1) Open Terminal and Type : "cd JAVA_HOME" (per-requisite Java-Home path must be set)
 
-2) "keytool -genkey -alias clypper -keyalg RSA"
+2) Type commmand "keytool -genkey -alias clypper -keyalg RSA"
 
-3) When you type above command you will see some questions.
+3) When you type above command you will see some questions. 
 ```
 utkarshkbhavsar:bin utkarsh$ keytool -genkey -alias clypper -keyalg RSA
-Enter keystore password:  _password_
-Re-enter new password: _password_
+Enter keystore password:  password
+Re-enter new password: password
 What is your first and last name?
-  [Unknown]:  _Utkarsh Bhavsar_
+  [Unknown]: Utkarsh Bhavsar
 What is the name of your organizational unit?
-  [Unknown]:_ _Mobiquity_
+  [Unknown]: Mobiquity
 What is the name of your organization?
   [Unknown]:  Mobiquity
 What is the name of your City or Locality?
@@ -94,7 +94,7 @@ Enter key password for
 Re-enter new password: password
 ```
 
-4) Now, ".keystore" file is created in "Users/[username]/.keystore"
+4) Now, ".keystore" is created in root directory for user e.g "Users/[username]/.keystore"
 
 ###Configuration for Tomacat:-
 
@@ -116,4 +116,4 @@ Re-enter new password: password
      protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
      secure="true" sslProtocol="TLS" />
 ```
-4) Make sure to change the location of "keystoreFile" as per your location and set your password as "keysotrePass"
+4) Make sure to change the location of "keystoreFile" as per your location and set your password in "keystorePass"
