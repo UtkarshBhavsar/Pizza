@@ -63,13 +63,13 @@ Go to: http://localhost:8080/clypper-web/
 SETTING UP SSL IN TOMCAT (HTTPS CONFIGURATION)
 =====================
 
-###To create Certificate:-
+###To Create Certificate for SSL:-
 
-1) Open Terminal and Type : "cd JAVA_HOME" (per-requisite Java-Home path must be set)
+1) Open Terminal and Type commmand : "cd JAVA_HOME" 
 
 2) Type commmand "keytool -genkey -alias clypper -keyalg RSA"
 
-3) When you type above command you will see some questions. 
+3) When you type above command you will be asked some questions. Answer them to create 
 ```
 [user]:bin [user] keytool -genkey -alias clypper -keyalg RSA
 Enter keystore password:  [password]
@@ -98,9 +98,9 @@ Re-enter new password: [password]
 
 ###Configuration for Tomacat:-
 
-1) Open Tomcat directory and open server.xml e.g "apache-tomcat-7.0.55/conf/server.xml"
+1) Open Tomcat directory and open _"server.xml"_ from _"conf"_ e.g "apache-tomcat-7.0.55/conf/server.xml"
 
-2) Find the below commented line from _server.xml_ and replace with given code in 3rd step
+2) Find the below commented line from server.xml and replace with given code in 3rd step
 ```<!--
 <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
     maxThreads="150" scheme="https" secure="true"
