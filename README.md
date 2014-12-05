@@ -71,30 +71,30 @@ SETTING UP SSL IN TOMCAT (HTTPS CONFIGURATION)
 
 3) When you type above command you will see some questions. 
 ```
-utkarshkbhavsar:bin utkarsh$ keytool -genkey -alias clypper -keyalg RSA
-Enter keystore password:  password
-Re-enter new password: password
+[user]:bin [user] keytool -genkey -alias clypper -keyalg RSA
+Enter keystore password:  [password]
+Re-enter new password: [password]
 What is your first and last name?
-  [Unknown]: Utkarsh Bhavsar
+  [Unknown]: [Name]
 What is the name of your organizational unit?
-  [Unknown]: Mobiquity
+  [Unknown]: [organizational unit]
 What is the name of your organization?
-  [Unknown]:  Mobiquity
+  [Unknown]:  [organization]
 What is the name of your City or Locality?
-  [Unknown]:  Ahmedabad
+  [Unknown]:  [City]
 What is the name of your State or Province?
-  [Unknown]:  GUJ
+  [Unknown]:  [State]
 What is the two-letter country code for this unit?
-  [Unknown]:  IN
-Is CN=Utkarsh Bhavsar, OU=Mobiquity, O=Mobiquity, L=Ahmedabad, ST=GUJ, C=IN correct?
+  [Unknown]:  [country code]
+Is CN=[Name], OU=[organizational unit], O=[organization], L=[City], ST=[State], C=[country code] correct?
   [no]:  yes
  
 Enter key password for
-    (RETURN if same as keystore password):  password
-Re-enter new password: password
+    (RETURN if same as keystore password):  [password]
+Re-enter new password: [password]
 ```
 
-4) Now, ".keystore" is created in root directory for user e.g "Users/[username]/.keystore"
+4) Now, ".keystore" is created in root directory for user e.g "Users/[user]/.keystore"
 
 ###Configuration for Tomacat:-
 
@@ -112,7 +112,7 @@ Re-enter new password: password
 ```
 <Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
      disableUploadTimeout="true" enableLookups="false" maxThreads="25"
-     port="8443" keystoreFile="/Users/utkarshbhavsar/.keystore" keystorePass="password"
+     port="8443" keystoreFile="/Users/[user]/.keystore" keystorePass="password"
      protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
      secure="true" sslProtocol="TLS" />
 ```
