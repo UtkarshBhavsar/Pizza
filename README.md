@@ -65,7 +65,7 @@ SETTING UP SSL IN TOMCAT (HTTPS CONFIGURATION)
 
 ###To Create Certificate for SSL:-
 
-1) Open Terminal and Type commmand : _"cd JAVA_\__HOME"__ 
+1) Open Terminal and Type commmand : _"cd JAVA_\__HOME"_ 
 
 2) Type commmand "keytool -genkey -alias clypper -keyalg RSA"
 
