@@ -100,7 +100,7 @@ Re-enter new password: [password]
 
 1) Open Tomcat directory and open server.xml e.g "apache-tomcat-7.0.55/conf/server.xml"
 
-2) Find the below commented line from server.xml and replace with given code in 3rd step
+2) Find the below commented line from _server.xml_ and replace with given code in 3rd step
 ```<!--
 <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
     maxThreads="150" scheme="https" secure="true"
