@@ -94,13 +94,13 @@ Enter key password for
 Re-enter new password: [password]
 ```
 
-4) Now, ".keystore" is created in root directory for user e.g "Users/[user]/.keystore"
+4) Now, _".keystore"_ is created in root directory for user e.g _"Users/[user]/.keystore"_
 
 ###Configuration for Tomacat:-
 
-1) Open Tomcat directory and open _"server.xml"_ from _"conf"_ e.g "apache-tomcat-7.0.55/conf/server.xml"
+1) Open Tomcat directory and open _"server.xml"_ from _"conf"_ e.g _"apache-tomcat-7.0.55/conf/server.xml"_
 
-2) Find the below commented line from server.xml and replace with given code in 3rd step
+2) Find the below commented line from _"server.xml"_ and replace with given code in 3rd step
 ```<!--
 <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
     maxThreads="150" scheme="https" secure="true"
@@ -116,4 +116,4 @@ Re-enter new password: [password]
      protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
      secure="true" sslProtocol="TLS" />
 ```
-4) Make sure to change the location of "keystoreFile" as per your location and set your password in "keystorePass"
+4) Make sure to change the location of _"keystoreFile"_ as per your location and set your password in _"keystorePass"_
