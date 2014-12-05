@@ -70,6 +70,7 @@ To create Certificate:-
 2) "keytool -genkey -alias clypper -keyalg RSA"
 
 3) When you type above command you will see some questions.
+```
 utkarshkbhavsar:bin utkarsh$ keytool -genkey -alias clypper -keyalg RSA
 Enter keystore password:  _password_
 Re-enter new password: _password_
@@ -91,6 +92,7 @@ Is CN=Utkarsh Bhavsar, OU=Mobiquity, O=Mobiquity, L=Ahmedabad, ST=GUJ, C=IN corr
 Enter key password for
     (RETURN if same as keystore password):  password
 Re-enter new password: password
+```
 
 4) Now, ".keystore" file is created in "Users/[username]/.keystore"
 
