@@ -101,17 +101,19 @@ Configuration for Tomacat:-
 1) Open Tomcat directory and open server.xml e.g "apache-tomcat-7.0.55/conf/server.xml"
 
 2) Find the below commented line from server.xml and replace with given code in 3rd step
-<!--
+```<!--
 <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
     maxThreads="150" scheme="https" secure="true"
     clientAuth="false" sslProtocol="TLS" />
 -->
+```
 
 3) Change the code with this
+```
 <Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
      disableUploadTimeout="true" enableLookups="false" maxThreads="25"
      port="8443" keystoreFile="/Users/utkarshbhavsar/.keystore" keystorePass="password"
      protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
      secure="true" sslProtocol="TLS" />
-
+```
 4) Make sure to change the location of "keystoreFile" as per your location and set your password as "keysotrePass"
