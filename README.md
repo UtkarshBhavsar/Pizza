@@ -63,7 +63,7 @@ Go to: http://localhost:8080/clypper-web/
 SETTING UP SSL IN TOMCAT (HTTPS CONFIGURATION)
 =====================
 
-To create Certificate:-
+###To create Certificate:-
 
 1) Open Terminal and Type : "cd JAVA_HOME" (per-requisite Java-Home path must be set)
 
@@ -96,7 +96,7 @@ Re-enter new password: password
 
 4) Now, ".keystore" file is created in "Users/[username]/.keystore"
 
-Configuration for Tomacat:-
+###Configuration for Tomacat:-
 
 1) Open Tomcat directory and open server.xml e.g "apache-tomcat-7.0.55/conf/server.xml"
 
